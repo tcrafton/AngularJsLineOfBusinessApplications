@@ -57,6 +57,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\prices\priceAnalyticsCtrl.js" />
+    <Content Include="app\prices\priceAnalyticsView.html" />
+    <Content Include="app\products\productDetailCtrl.js" />
+    <Content Include="app\products\productDetailView.html" />
+    <Content Include="app\products\productEditCtrl.js" />
+    <Content Include="app\products\productEditInfoView.html" />
+    <Content Include="app\products\productEditPriceView.html" />
+    <Content Include="app\products\productEditTagsView.html" />
+    <Content Include="common\services\productService.js" />
+    <Content Include="css\toastr.css" />
+    <Content Include="Scripts\angular-charts.min.js" />
+    <Content Include="Scripts\d3.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-0.11.0.js" />
+    <Content Include="Scripts\ui-utils.js" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
@@ -887,9 +902,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\prices\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

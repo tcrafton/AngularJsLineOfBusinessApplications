@@ -5,6 +5,7 @@
 
     <!-- Style Sheets -->
     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="css/toastr.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
 
     <!-- Third Party Libraries -->
@@ -14,6 +15,11 @@
     <script src="Scripts/angular-resource.js"></script>
     <script src="Scripts/angular-mocks.js"></script>
     <script src="Scripts/angular-ui-router.js"></script>
+    <script src="Scripts/ui-utils.js"></script>
+    <script src="Scripts/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="Scripts/toastr.js"></script>
+    <script src="Scripts/d3.js"></script>
+    <script src="Scripts/angular-charts.min.js"></script>
 
 
     <!-- Application Script -->
@@ -23,9 +29,13 @@
     <script src="common/services/common.services.js"></script>
     <script src="common/services/productResource.js"></script>
     <script src="common/services/productResourceMock.js"></script>
+    <script src="common/services/productService.js"></script>
 
     <!-- Product Controllers -->
     <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/productDetailCtrl.js"></script>
+    <script src="app/products/productEditCtrl.js"></script>
+    <script src="app/prices/priceAnalyticsCtrl.js"></script>
 
 </head>
 
@@ -49,11 +59,12 @@
                 <ul class="nav navbar-nav">
                     <li><a ui-sref="productList">Product List</a></li>
                     <li>
-                        <a ui-sref="productEdit({productId:0})">
+                        <a ui-sref="productEdit.info({productId:0})">
                             <i class="glyphicon glyphicon-plus"></i>
                             Add Product
                         </a>
                     </li>
+                    <li><a ui-sref="priceAnalytics">Price Analytics</a></li>
                 </ul>
             </div>
         </div>

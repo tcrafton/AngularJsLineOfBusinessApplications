@@ -1,9 +1,24 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
+﻿<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size:large">
+        {{vm.title}}
+    </div>
 
-</body>
-</html>
+    <div class="panel-body">
+        <div class="wizard">
+            <a ui-sref=".info"
+               ui-sref-active="active">
+               Basic Information
+            </a>
+            <a ui-sref=".price"
+               ui-sref-active="active">
+                Price Details
+            </a>
+            <a ui-sref=".tags"
+               ui-sref-active="active">
+                Search Tags
+            </a>
+        </div>
+
+        <div ui-view></div>
+    </div>
+</div>
